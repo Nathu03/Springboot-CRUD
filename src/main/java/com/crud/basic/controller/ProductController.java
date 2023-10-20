@@ -25,17 +25,6 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
-    // @GetMapping("/api/products/{id}")
-    // public ResponseEntity<Product> getProductById(@RequestParam Long id) {
-    //     Product product = productService.getProductById(id);
-    //     if (product != null) {
-    //         return ResponseEntity.ok(product);
-    //     } else {
-    //         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-    //     }
-    // }
-
-
     @PostMapping
     public Product createProduct(@RequestBody Product product) {
         return productService.createProduct(product);
