@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BasicApplication {
 
 	public static void main(String[] args) {
-//		int age =27;
 		SpringApplication.run(BasicApplication.class, args);
-//		System.out.print("Hello Narthanan ne oru chellakutty da enta and vayasu " + age);
 	}
 
 }
