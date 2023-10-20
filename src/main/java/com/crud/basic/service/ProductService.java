@@ -22,9 +22,9 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public Product getProductById(Long id) {
+    public Optional<Product> getProductById(Long id) {
         Optional<Product> product = productRepository.findById(id);
-        return product.orElse(null);
+        return Optional.ofNullable(product.orElse(null));
     }
 
     public Product createProduct(Product product) {
